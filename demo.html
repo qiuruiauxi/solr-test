@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Demo Solr Search</title>
+	<meta charset="utf-8" /> 
+
+	<link href="search.css" rel="stylesheet" type="text/css">
+	<script src="cors.js"></script>
+	<script src="pagination.js"></script>
+	<script src="solr.js"></script>
+</head>
+<body>
+	
+	<form id="dataSearchForm" name="dataSearchForm">
+		<input class="search-input" name="q" placeholder="Enter search term" type="text">
+		<input type="submit" value="Search">
+	</form>
+	<div class="loading" id="loading-div">
+		<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+		<span class="sr-only">Loading...</span>
+	</div>
+	<p>Search URL will be written below:</p>
+	<p id="searchUrl"></p>
+	<p>Search results will be written below:</p>
+
+	<div class="resultCount" id="resultCount"></div>
+	<div class="showresult" id="searchResults"></div>
+	<div class="pagination" id="pagination"></div>
+</body>
+</html>
